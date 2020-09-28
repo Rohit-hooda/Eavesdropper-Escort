@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooo</title>
+</head>
+<body>
+    <h1>Key gen</h1>
+
+    Hello generate bot there<br><br>
+    
+        Name* <input type = "text"  id = "name"  value="name1"> <br> <br>
+        Email* <input type="email"  id = "email" value="abc@gmail.com"> <br> <br>
+        Passphrase* <input type = "text"  id = "passphrase" value="pass"> <br> <br>
+        Key Gen: <input type="button" id = "submit" value = "submit" onclick="keyGen()"></button>
+    <br><br><strong>NOTE: DO Remember the Passphrase</strong>
+    <div style="display: none;" id="generated-keys-div">
+        <h3>Your Keys: </h3>
+        <div id="generated-private-key-div">
+              <h4>Private Key</h4>
+              <p>Your Private Key. Always keep this safely and never share with anyone.</p>
+              <textarea id="generated-private-key-textarea" rows="10" cols="100"></textarea>
+        </div>
+        <div id="generated-public-key-div">
+              <h4>Public Key</h4>
+              <p>Your Public Key. You may give this to others for encrypting and sending messages to you.</p>
+              <textarea id="generated-public-key-textarea" rows="10" cols="100" ></textarea>
+        </div>
+    </div>
+
+</body>
+<script src="./js/openpgp.min.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
